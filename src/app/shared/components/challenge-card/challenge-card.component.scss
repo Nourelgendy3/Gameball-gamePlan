@@ -1,0 +1,133 @@
+.card-container {
+  border: 0.1rem solid #f6f6f6;
+  border-radius: 0.4rem;
+  .challenge-status {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.3rem;
+    .wrapper {
+      display: flex;
+      margin-inline: 1.2rem;
+      align-content: flex-end;
+      height: 1.2rem;
+      cursor: pointer;
+      .status {
+        align-self: center;
+        margin-inline-end: 0.7rem;
+        font-weight: 500;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.064rem;
+      }
+      .active-status {
+        color: #3ddc97;
+      }
+      .inactive-status {
+        color: #a9abb2;
+      }
+      .icon {
+        align-self: center;
+      }
+    }
+  }
+  .card-header {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    .img-wrapper {
+      width: 5rem;
+      height: 5rem;
+      margin-inline-start: 2.4rem;
+      margin-inline-end: 0.8rem;
+      .game-icon {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .challenge-title-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+
+      p {
+        margin-block-start: 0rem;
+        margin-block-end: 0rem;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+
+        color: #424242;
+      }
+      .desc {
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+
+        color: #424242;
+      }
+    }
+  }
+  .challenge-description {
+    color: #a9abb2;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-inline: 2.4rem;
+    margin-block: 1.6rem 1.8rem;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.2rem;
+    gap: 0.8rem;
+    margin-inline-start: 2.4rem;
+    .details-row {
+      display: flex;
+      flex-direction: row;
+      gap: 1.3rem;
+      .detail {
+        display: flex;
+        flex-direction: row;
+        width: 10.3rem;
+        .d-img {
+          width: 2rem;
+          height: 2rem;
+          margin-inline-end: 0.62rem;
+        }
+        .detail-name {
+          align-self: center;
+          font-weight: 400;
+          font-size: 1.2rem;
+          line-height: 1.8rem;
+          color: #424242;
+        }
+        .last-detail {
+          width: 10rem;
+          background-color: #f6f6f6;
+          border-radius: 0.4rem;
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          .tag-icon {
+            width: 1.2rem;
+            height: 1.2rem;
+            margin-inline-end: 0.5rem;
+            margin-inline-start: 0.9rem;
+            align-self: center;
+          }
+          .tag-desc {
+            align-self: center;
+            font-size: 1rem;
+            line-height: 1.5rem;
+
+            color: #424242;
+          }
+        }
+      }
+    }
+  }
+}

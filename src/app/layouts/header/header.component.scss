@@ -1,0 +1,43 @@
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.7rem;
+  .title {
+    font-size: 1.6rem;
+    color: #292c3b;
+    font-weight: 400;
+  }
+  .menu-btn {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.8rem;
+    .info {
+      .title {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #424242;
+      }
+      .desc {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: #424242;
+      }
+    }
+    .icon {
+      align-self: self-end;
+    }
+  }
+}
+.line {
+  border: 1px solid #f6f6f6;
+  width: 79vw;
+  margin-inline-start: -37px;
+  margin-top: 1.8rem;
+  @media screen and (max-width: 600px) {
+    margin-inline-start: 0;
+    width: 100%;
+  }
+}

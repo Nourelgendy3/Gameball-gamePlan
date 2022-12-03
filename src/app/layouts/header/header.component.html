@@ -1,0 +1,15 @@
+<header class="header-wrapper">
+  <p class="title">{{ tabSelected }}</p>
+  <button class="menu-btn" mat-button [matMenuTriggerFor]="menu">
+    <img src="assets/icon_Switcher_HiFi.png" alt="user image" />
+    <div class="info">
+      <p class="desc">Account Switcher</p>
+      <p class="title">Category 99</p>
+    </div>
+    <mat-icon class="icon">expand_more</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>logout</button>
+  </mat-menu>
+</header>
+<hr class="line" />

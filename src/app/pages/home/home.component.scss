@@ -1,0 +1,18 @@
+.home-wrapper {
+  display: flex;
+  height: 100vh;
+  .content-wrapper {
+    width: 74.375vw;
+    padding-inline: 3.6rem;
+    .search {
+      margin-top: 3.2rem;
+    }
+    .tabs {
+      margin-top: 6.4rem;
+    }
+    @media (max-width: 600px) {
+      padding-inline: 0.6rem;
+      width: 82.375vw;
+    }
+  }
+}

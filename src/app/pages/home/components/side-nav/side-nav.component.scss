@@ -1,0 +1,70 @@
+.nav {
+  background-color: #f6f6f6;
+  width: 25.6rem;
+  height: 97vh;
+  padding-top: 2.04rem;
+  @media screen and (max-width: 600px) {
+    width: 6rem;
+  }
+  &__logo {
+    padding-inline-start: 3.34rem;
+    @media screen and (max-width: 600px) {
+      justify-content: center;
+      padding-inline-start: 0;
+    }
+    &__img {
+      height: 3.11rem;
+      width: 3.11rem;
+    }
+    &--title {
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: #000000;
+      margin-inline-start: 0.75rem;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+  &__element {
+    height: 4.6rem;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 600px) {
+      justify-content: space-around;
+    }
+    &__img {
+      height: 2.8rem;
+      width: 2.8rem;
+      margin-inline-end: 0.9rem;
+      @media screen and (max-width: 600px) {
+        margin-inline: 0 !important;
+      }
+      &--img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    &--title {
+      font-weight: 300;
+      font-size: 1.6rem;
+      color: #424242;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+  &__content {
+    margin-block-start: 7.64rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+    .nav {
+      &__element {
+        cursor: pointer;
+      }
+    }
+  }
+}

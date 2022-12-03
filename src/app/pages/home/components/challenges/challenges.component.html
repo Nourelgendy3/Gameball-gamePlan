@@ -1,0 +1,13 @@
+<div class="actions">
+  <p class="num-of-actions">4 challenges</p>
+  <button class="create-btn">
+    Create New Challenge
+    <img src="assets/icon_Add-LoFi_20px.png" alt="Add new challenge" />
+  </button>
+</div>
+<div class="cards__container">
+  <app-challenge-card
+    *ngFor="let challenge of challenges"
+    [cardData]="challenge"
+  ></app-challenge-card>
+</div>

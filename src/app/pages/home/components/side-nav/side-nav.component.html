@@ -1,0 +1,39 @@
+<nav class="nav">
+  <section class="nav__logo nav__element">
+    <div class="nav__logo__img">
+      <img
+        src="assets/Group 10.png"
+        alt="gameball-logo"
+        class="nav__element__img--img"
+      />
+    </div>
+    <h1 class="nav__logo--title">Gameball</h1>
+  </section>
+  <section class="nav__content">
+    <section
+      class="nav__element"
+      *ngFor="let element of elements"
+      (click)="selectTab(element.title)"
+    >
+      <img
+        src="assets/SideMenu_Label-Active.png"
+        alt="selected"
+        *ngIf="tabSelected == element.title"
+      />
+      <div
+        class="nav__element__img"
+        [ngStyle]="{
+          'margin-inline-start':
+            tabSelected == element.title ? '2.9rem' : '3.3rem'
+        }"
+      >
+        <img
+          [src]="element.img"
+          alt="gameball-logo"
+          class="nav__element__img--img"
+        />
+      </div>
+      <h1 class="nav__element--title">{{ element.title }}</h1>
+    </section>
+  </section>
+</nav>

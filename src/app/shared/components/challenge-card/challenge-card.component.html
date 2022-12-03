@@ -1,0 +1,49 @@
+<div class="card-container">
+  <div class="challenge-status">
+    <div class="wrapper" *ngIf="cardData.status == true">
+      <p class="active-status status">ACTIVE</p>
+      <img src="assets/Status_Active.svg" alt="" class="icon" />
+    </div>
+    <div class="wrapper" *ngIf="cardData.status == false">
+      <p class="inactive-status status">INACTIVE</p>
+      <img src="assets/Status_In_Active.svg" alt="" class="icon" />
+    </div>
+  </div>
+  <div class="card-header">
+    <div class="img-wrapper">
+      <img [src]="cardData.img" class="game-icon" />
+    </div>
+
+    <div class="challenge-title-wrapper">
+      <p class="title">{{ cardData.title }}</p>
+      <p class="desc">{{ cardData.date }} at {{ cardData.time }}</p>
+    </div>
+  </div>
+  <p class="challenge-description">
+    {{ cardData.description }}
+  </p>
+  <div class="details">
+    <div class="details-row">
+      <div class="detail">
+        <img [src]="cardData.features.frubies.img" class="d-img" />
+        <p class="detail-name">{{ cardData.features.frubies.value }}</p>
+      </div>
+      <div class="detail">
+        <img [src]="cardData.features.points.img" class="d-img" />
+        <p class="detail-name">{{ cardData.features.points.value }}</p>
+      </div>
+    </div>
+    <div class="details-row">
+      <div class="detail">
+        <img [src]="cardData.features.milestones.img" class="d-img" />
+        <p class="detail-name">{{ cardData.features.milestones.value }}</p>
+      </div>
+      <div class="detail">
+        <div class="last-detail">
+          <img [src]="cardData.features.tag.img" class="tag-icon" />
+          <p class="tag-desc">{{ cardData.features.tag.value }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
