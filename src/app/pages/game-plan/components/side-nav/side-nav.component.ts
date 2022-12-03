@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { HomeService } from 'src/app/shared/home.service';
+import { GamePlanService } from 'src/app/shared/game-plan.service';
 
 @Component({
   selector: 'app-side-nav',
@@ -15,12 +15,12 @@ export class SideNavComponent implements OnInit {
     { img: 'assets/Subtraction 1.png', title: 'Levels' },
   ];
 
-  constructor(private homeService: HomeService) {}
+  constructor(private gamePlanService: GamePlanService) {}
 
   ngOnInit(): void {}
 
   selectTab(tab: string) {
     this.tabSelected = tab;
-    this.homeService.tabSelected$.next(tab);
+    this.gamePlanService.tabSelected$.next(tab);
   }
 }

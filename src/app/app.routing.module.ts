@@ -6,7 +6,9 @@ export const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./pages/home/home.module').then((m) => m.HomeModule),
+      import('./pages/game-plan/game-plan.module').then(
+        (m) => m.GamePlanModule
+      ),
   },
 ];
 

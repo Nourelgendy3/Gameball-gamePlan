@@ -22,6 +22,15 @@ html {
 :root {
   --primary-color: #256eff;
 }
+.mat-tab-label{
+  font-family: "Poppins", sans-serif !important;
+  color: #424242 ;
+  font-weight: 400;
+font-size: 1.6rem;
+line-height: 24px;
+
+}
+
 
 p {
   margin-block-start: 0rem;
@@ -53,6 +62,7 @@ p {
     padding: 0;
     margin-inline-end: 1.6rem;
     justify-content: start;
+     color: #424242;
   }
   .mat-tab-header {
     color: var(--primary-color);
